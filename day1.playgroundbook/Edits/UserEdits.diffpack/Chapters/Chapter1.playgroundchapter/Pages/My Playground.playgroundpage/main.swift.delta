@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Day 1
+
+var popualation = 8_000_000
+print(popualation)
+
+//Constant values defines with let
+
+let pi = 3.14
+// Multiline string with triple " every line is act as new line. Linebreak ( \ ) stops new line
+
+var str1 = """
+This goes
+over multiple
+lines
+"""
+
+var str2 = """
+This goes \
+over multiple \
+lines 
+"""
+
+var str3 = """
+    double line \n
+    
+    hgfjdkslş
+    """
+
+print(str1)
+print(str2)
+print(str3)
+
+
+// String interpolation with \("STRİNG") 
+var score = 85
+var str = "Your score was \(score)"
+
+print(str)
+
+
+//Type annotations. var/let "name" : "Type 
+
+let album: String = "Reputation"
+let year: Int = 1989
+let height: Double = 1.78
+let taylorRocks: Bool = true
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 671}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

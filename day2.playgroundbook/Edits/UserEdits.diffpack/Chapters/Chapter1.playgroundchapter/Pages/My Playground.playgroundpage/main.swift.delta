@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>/// Arrays 
+
+//Type annotations on arrays displays in bracket [String]
+
+let john = "John Lennon"
+let paul = "Paul McCartney"
+let george = "George Harrison"
+let ringo = "Ringo Starr"
+
+let beatles = [john, paul, george, ringo]
+
+let arr:[String] = [john, paul , george , ringo]
+
+print(arr[0]) 
+
+
+/// Sets
+
+// Diff with arrays num 1 - Hold unique values.
+// Diff with arrays num 1 - Rather than arrays items are unordered.
+
+let colors = Set(["red", "green", "blue"])
+
+let colors2 = Set(["red", "green", "blue", "red", "blue"])
+
+/// Tuples
+
+/// Can't add or remove value. Fixed in size.
+/// Can't change item types.
+/// Acess items by numerical positions or names. 
+
+var tuple = (first: "Taylor", last: "Swift")
+
+print(tuple.0)
+print(tuple.first)
+
+/// Dictionaries (map in Dart)
+
+// Type annotations  : [Double: String] 
+// In case of return nil for missing value we can provide default value
+
+var map : [String:Double] = [ "Batuhan" : 1.8 , "Eren" : 1.85 ]
+
+print(map["Batuhan"])
+print(map["murat" , default : 1.65])
+
+/// Creating Empty Collections (array - dictionary - set)
+
+// Swiftb has special syntax for array and dictionaries
+
+var emptyArr = [Int]()
+var emptyDictionary = [String:Double]()
+
+var emptyArr2 = Array&lt;String&gt;() 
+var emptyDictionary2 = Dictionary&lt;String,Double&gt;() 
+var emptySet = Set&lt;Int&gt;()  
+
+/// Enums  
+
+enum Results {
+    case success
+    case fail
+}
+
+var enumTest = Results.fail
+
+// Enum associated values
+
+enum Activity {
+    case bored
+    case running(destination: String)
+    case talking(topic: String)
+    case listening(volume: Int)
+}
+
+var enumValueTest = Activity.listening(volume: 15) 
+
+// Enum raw values
+
+enum Planet : Int {
+    case mercury
+    case venus
+    case earth 
+    case mars
+}
+let earth = Planet(rawValue: 2)
+print(earth) 
+
+enum Planets : Int {
+    case mercury = 1
+    case venus
+    case earth 
+    case mars
+}
+
+let earth2 = Planets(rawValue: 3) 
+print(earth2)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1905}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
