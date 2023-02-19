@@ -15,3 +15,25 @@ Day 2
 - Tuples
 - Dictionaries
 - Enumerations
+
+Day 3
+- Arithmetic operators 
+- Operator overloading
+- Compound assignment operators
+- Comparision operators
+- Conditions
+- Combining conditions
+- The ternary operator
+- Switch statements
+- Range operators
+
+Day 4
+- For loops
+- While loops
+- Repeat loops
+- Exiting loops
+- Exiting multiple loops
+- Skipping items
+- Infinite loops
+- Looping summary
+

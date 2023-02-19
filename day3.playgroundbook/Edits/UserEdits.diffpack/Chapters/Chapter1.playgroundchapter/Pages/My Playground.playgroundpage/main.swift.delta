@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Ternary Operator
+// Name of the classic ? opearator in Dart.
+
+// Switch Statements
+
+// Must cover all possibilities. if there is more like String data we must use default. In enums no need for default
+// with "fallthrough" keyword we can execute next case
+
+let weather = "sunny"
+
+switch weather {
+case "sunny":
+    print("Wear sunscreen")
+    fallthrough
+case "snow":
+    print("Wrap up warm")
+case "rain":
+    print("Bring an umbrella")
+default:
+    print("Enjoy your day!")
+}
+enum Batuhan{
+   case asd
+   case asde
+}
+
+var xx = Batuhan.asd
+
+switch xx {
+case Batuhan.asd:
+    print("asd")
+    
+case Batuhan.asde:
+    print("asd")
+}
+
+// Range Operators
+
+//  1...5 contains all numbers and 1..&lt;5 contains 1-2-3-4
+
+let score = 85
+
+switch score {
+case 0..&lt;50:
+    print("You failed badly.")
+case 50..&lt;85:
+    print("You did OK.")
+default:
+    print("You did great!")
+}
+
+
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 873}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

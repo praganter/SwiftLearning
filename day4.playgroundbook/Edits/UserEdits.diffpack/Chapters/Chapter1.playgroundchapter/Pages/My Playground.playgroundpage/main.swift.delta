@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Loops
+
+//  1 - For Loops
+
+
+let count = 1...10
+
+for number in count {
+    print("Number is \(number)")
+}
+
+let colors = ["Red" , "Green" , "Blue"]
+
+for color in colors {
+    print("Colors is : \(color)")
+}
+
+print("Code Swift")
+for _ in 1...5 {
+    print("code")
+}
+
+// 2 - While Loops. 
+
+// condition checks first
+
+var number = 1 
+
+while number &lt;= 20 {
+    print("Number is \(number)")
+    number += 1
+}
+
+
+// 3 - Repeat Loops
+
+//Condition checks last - Do While loop
+
+number = 1
+repeat {
+    print("Number is \(number)")
+    number += 1
+}while number &lt;= 20 
+
+// Repeat vs While
+
+while false {
+    print("never be wrtitten")
+}
+repeat {
+    print("This will be written")
+} while false
+
+
+// 4 - Exiting Loops
+
+// breaks
+var countDown = 7
+
+while countDown &gt;= 0 {
+    print(countDown)
+
+    if countDown == 4 {
+        print("I'm bored. Let's go now!")
+        break
+    }
+
+    countDown -= 1
+}
+
+// 5 - Exiting multiple loops
+
+// loop inside loops is called nested loops
+// give label to outer loop and break it in inner loop
+
+outerLoop: for i in 1...10 {
+    for j in 1...10 {
+        let product = i * j
+        print("\(i) * \(j) is \(product)")
+        if product == 50 {
+            print("breaksssss")
+            break outerLoop
+        }
+    }
+}
+
+// 6 - Skipping Item 
+
+// Use continue keyword for skip that iteration
+
+for i in 1...10 {
+    if i % 2 == 1 {
+        continue
+    }
+    print(i)
+}
+
+// 7 - Infinite Loops 
+
+var counter = 0
+
+while true {
+    print("-")
+    counter += 1
+
+    if counter == 273 {
+        break
+    }
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1531}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
