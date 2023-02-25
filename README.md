@@ -37,3 +37,14 @@ Day 4
 - Infinite loops
 - Looping summary
 
+Day 5
+- Writing functions
+- Accepting parameters
+- Returning values
+- Parameter labels
+- Omitting parameter labels
+- Default parameters
+- Variadic functions
+- Writing throwing functions
+- Running throwing functions
+- inout parameters
