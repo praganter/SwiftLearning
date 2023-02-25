@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// 1 - Writing function
+
+func printHelp() {
+    print("Help")
+}
+
+printHelp()
+
+// 2 - Accepting parameter
+
+func square(number : Int ) {
+    print(number * number)
+}
+
+square(number: 5)
+
+// 3 - Returning values
+
+func square2(number : Int) -&gt; Int {
+    return number * number
+}
+
+let result = square2(number:6)
+print(result)
+
+// 4 - Parameter labels
+
+// Writing 2 names for first -&gt; external seconds internal usage
+
+func sayHello(to name: String) {
+    print("Hello \(name)")
+}
+
+sayHello(to: "My little friends")
+
+// 5 - Omitting parameter labels
+
+func greet(_ person: String) {
+    print("Hello, \(person)!")
+}
+
+greet("Batuhan")
+
+// 6 - Default parameter
+
+func greet2(_ person:String, nicely: Bool = true) {
+     nicely ? print("Hello \(person)") : print("\(person) again :(")
+}
+
+greet2("Batuhan")
+greet2("Naci", nicely : false)
+
+// 7 - Variadic functions
+
+// with square(numbers: Int...).  there could be zore or more integers 
+
+func square3(numbers: Int...) {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+
+square3(numbers: 1, 2, 3, 4, 5)
+
+// 8 - Writing throwing functions
+// For throwing error if we will use enum it must be existed Error type
+
+enum PasswordError : Error {
+    case weakPassword
+} 
+
+func checkPassword(_ password: String) throws -&gt; Bool {
+if (password == "password"){
+throw PasswordError.weakPassword
+}
+    return true
+}
+
+// 9 - Using throwing functions
+// do - try - catch
+do {
+    try checkPassword("password")
+    print("Password is good !")
+} catch {
+    print("choose another")
+    }
+    
+// 10 - inout parameters
+// must have variable and use ampersand (&amp;) before it
+
+func doubleInPlace(number : inout Int) {
+    number *= 2
+}
+ var number = 10
+print(number)
+doubleInPlace(number: &amp;number)
+print(number)
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1773}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
